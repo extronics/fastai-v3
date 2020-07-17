@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/u/0/uc?export=download&confirm=IDS3&id=1LJEcs6SrB23usDL4cA9x26AtBFrBAOcJ'
+export_file_name = 'cifar10-rn34.pth'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 path = Path(__file__).parent
 
 app = Starlette()
